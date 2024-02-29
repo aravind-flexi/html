@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML="Hello Javascript";
+</script>
+
+<p id="demo">JavaScript can change the content of an HTML element.</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+<p id="demo">This is a demonstration.</p>
+
+<script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "yellow";        
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+<br>
+<script>
+function laptop(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "laptop.jpg"
+  } 
+else {
+    pic = "Wfh.jpg"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="laptop.jpg" width="200" height="200">
+
+<p>
+<button type="button" onclick="laptop(1)"> On</button>
+<button type="button" onclick="laptop(0)"> Off</button>
+</p>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<h2>Absolute URL File Path</h2>
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style="width:300px">
+<h2>Relative URL File Path</h2>
+<img src="one.jpg" alt="bee" width="200">
+<img src="images/one.jpg" alt="bee" width="200">
+<img src=/images/one.jpg" alt="bee" width="200">
+<img src="../images/one.jpg" alt="bee" width="200">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

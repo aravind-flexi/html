@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Video Elements</h1>
+<video width="320" height="240" controls>
+  <source src="SampleVideo.mp4" type="video/mp4">
+  <source src="SampleVideo.ogg" type="video/ogg">
+</video>
+<br>
+<video width="320" height="240" autoplay>
+  <source src="SampleVideo.mp4" type="video/mp4">
+  <source src="SampleVideo.ogg" type="video/ogg">
+</video>
+<br>
+<video width="320" height="240" autoplay muted>
+  <source src="SampleVideo.mp4" type="video/mp4">
+  <source src="SampleVideo.ogg" type="video/ogg">
+</video>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="SampleVideo.mp4" type="video/mp4">
+    <source src="SampleVideo.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<h1>Audio Elements</h1>
+
+<audio controls>
+  <source src="SampleAudio.ogg" type="audio/ogg">
+  <source src="SampleAudio.mp3" type="audio/mpeg">
+</audio>
+<br>
+
+<audio controls autoplay>
+  <source src="SampleAudio.ogg" type="audio/ogg">
+  <source src="SampleAudio.mp3" type="audio/mpeg">
+</audio>
+<br>
+
+<audio controls autoplay muted>
+  <source src="SampleAudio.ogg" type="audio/ogg">
+  <source src="SampleAudio.mp3" type="audio/mpeg">
+</audio>
+
+<h1>Plug-Ins Element</h>
+<h2>Object Element>/h2>
+<object width="100%" height="200px" data="laptop.html"></object>
+<object data="wfh.jpg" width="50%"></object>
+
+<h2>Embed Element</h2>
+<embed width="100%" height="200px" src="teapot.html">
+<embed src="two.jpg">
+
+<h2>Youtube Video Element</h2>
+<iframe width="420" height="350" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+<h2>Youtube Video autoplay mute Element</h2>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+</iframe>
+<h2>Youtube Video Loop Element</h2>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+<h2>Youtube Controls</h2>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+</iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

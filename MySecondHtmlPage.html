@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>SecondPage</title>
+<link rel="icon" type="image/x-icon" href="favicon.jpg">
+<style> body {background-color:LightGrey;} h1 {color:Grey;font-family:verdana;font-size:300%} h2 {border:2px solid Green;padding:30px;margin:20px} p {color:green;font-family:courier;font-size:160%} </style>
+<!--full path <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">-->
+<!--sheet in other(html) folder < link rel="stylesheet" href="/html/styles.css">-->
+<!--sheet in same page folder <link rel="stylesheet" href="styles.css">-->
+
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: violet;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+button:link, button:visited {
+  background-color:yellow;
+  color:white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, button:active {
+  background-color: red;
+
+/*body{
+  background-image:url('W3Schools.jpg');
+}*/
+</style>
+</head>
+
+<body>
+<h1>Welcome To My Page</h1>
+<h2 style="color:red;">Hi, My Name Is Aravind.</h2>
+<p>Currently, I am doing Master's in ML/AI.</p>
+
+<!--use a full URL to link a web page-->
+<a href="https://www.w3schools.com/">Visit w3Schools.com</a>
+<br>
+<a href="https://www.w3schools.com/" target="_blank">Visit w3Schools.com</a>
+<br>
+<!--use a relative path when page is located in same folder-->
+<a href="file:///C:/Users/aravi/OneDrive/Documents/MySecondHtmlPage.html" target="_blank">MyHtml SecondPage</a>
+<br>
+<a href="https://www.W3Schools.com" target="_blank"><img src="W3Schools.jpg" alt=Logo style="width:30px;height:30px;"></a>
+<br>
+<a href="mailto:aravindbabu663@gmail.com">Send Email</a>
+<br>
+<button onclick=document.location="https://www.apple.com">Click me!</button>
+<button onclick=document.location="https://www.google.com">Click here!</button>
+<br>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+<br>
+<h1 >Chapter 1</h1>
+<h1 >Chapter 2</h1>
+<a href="#C8">Go to chapter 8</a>
+<h1 >Chapter 3</h1>
+<h1 id="C4">Chapter 4</h4>
+<h1 >Chapter 5</h1>
+<h1 >Chapter 6</h1>
+<a href="#C12">Go to chapter 12</a>
+<h1 >Chapter 7</h1>
+<h1 id="C8">Chapter 8</h5>
+<h1 >Chapter 9</h1>
+<h1 >Chapter 10</h1>
+<h1 >Chapter 11</h1>
+<h1 id="C12">Chapter 12</h6>
+
+<a href="#C4">Go to chapter 4</a>
+<br>
+<a href="MyFirstHtmlPage.html#C4" target="_blank"> Go to paragraph4 in first page</a>
+<br>
+<img src="file:///C:/Users/aravi/OneDrive/Documents/images/one.jpg" alt="bee photo" style=";width:250px;height:250px;">
+<br>
+<!--<img src="https://unsplash.com/photos/a-large-rock-formation-in-the-middle-of-a-desert-8y4skAfqpsg" alt="flower photo" width:"250";height:"250">-->
+<br>
+<p><img src="three.jpg" alt="bee photo" style="float:right;width:150px;height:150px;">This is a image contains a bee and a flower</p>
+<br>
+<img src="CWF.gif" alt="Computer Image" style="width:150px;height:150px;"> 
+<br>
+<h3>image with clickable areas</h3>
+
+<img src="wfh.jpg" alt="WorkFromHome Setup" usemap="#wfhmap" width="400" height="379">
+
+<map name="wfhmap">
+
+<area shape="rect" coords="150,120,250,250" title="rectangle" href="laptop.html" onclick="myFunction()">
+
+<script>
+function myFunction(){
+alert("You clicked on the laptop!");
+}</script>
+
+<area shape="circle" coords="50,310,25" title="Circle" href="teapot.html" onclick="myFunction()">
+
+<script>
+function myFunction(){
+alert("You clicked on the teapot!");
+}</script>
+
+</map>
+
+<br>
+
+<picture>
+  <source media="(min-width: 1080px)" srcset="W3Schools.jpg">
+  <source media="(min-width: 750px)" srcset="wfh.jpg">
+  <img src="laptop.jpg" style="width:auto;">
+</picture>
+
+<br>
+
+<p style="background-image:url('W3Schools.jpg');
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-size:100% 100%">
+W3Schools is a popular online platform that provides web development tutorials and references for various web technologies.<br>
+It serves as a comprehensive resource for individuals who are learning or looking to enhance their skills in HTML, CSS, JavaScript, and other related technologies.</p>
+
+
+
+</body>
+
+</html>

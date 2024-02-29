@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>HTML Iframes</h1>
+
+<iframe src="demo_iframe.html" style="border:2px solid green" height="200" width="300" title="Google HomePage"></iframe>
+
+<iframe src="demo_iframe.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas width="200" height="100" style="border:1px solid blue;"></canvas>
+<br>
+
+<canvas id="line" width="200" height="100" style="border:1px solid blue;"></canvas>
+
+<script>
+var c = document.getElementById("line");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+</script>
+<br>
+
+<canvas id="circle" width="200" height="100" style="border:1px solid blue;"></canvas>
+<script>
+var c = document.getElementById("circle");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script> 
+<br>
+
+<canvas id="text" width="200" height="100" style="border:1px solid blue;"></canvas>
+<script>
+var c = document.getElementById("text");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World",10,50);
+</script>
+<br>
+
+<canvas id="stroketext" width="200" height="100" style="border:1px solid blue;"></canvas>
+<script>
+var c = document.getElementById("stroketext");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Hello World",10,50);
+</script>
+<br>
+
+<canvas id="lgradient" width="200" height="100" style="border:1px solid blue;"></canvas>
+<script>
+var c = document.getElementById("lgradient");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+<br>
+
+<canvas id="cgradient" width="200" height="100" style="border:1px solid blue;"></canvas>
+<script>
+var c = document.getElementById("cgradient");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+<br>
+
+<p>Image to use:</p>
+<img id="image" src="wfh.jpg" alt="The laptop" width="220" height="277">
+
+<p>Canvas to fill:</p>
+<canvas id="myCanvas" width="750" height="750"
+style="border:1px solid black;">
+</canvas>
+
+<p><button onclick="myCanvas()">Try it</button></p>
+
+<script>
+function myCanvas() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("image");
+  ctx.drawImage(img,0,50);
+}
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

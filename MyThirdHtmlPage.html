@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>ThirdPage</title>
+
+<style>
+table{
+	border-collapse:collapse;
+	width:100%;}
+th,td{/*border:1px solid black;
+	border-radius:10px;
+	background-color:#96D4D4;
+	border-style:dotted;
+	border-color;#96D4D4;*/
+	padding:10px;
+	/*padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	padding-right: 40px;*/
+	text-align:left;
+	border-bottom:1px solid #ddd;}
+/*tr:nth-child(even){background-color:#D6EEEE;}
+th:nth-child(even),td:nth-child(even) {background-color: #D6EEEE;}
+tr:nth-child(even) { background-color: rgba(150, 212, 212, 0.4);}
+th:nth-child(even),td:nth-child(even) {background-color: rgba(150, 212, 212, 0.4);}
+tr{border-bottom:1px solid #ddd;}*/
+tr:hover{background-color:#D6EEEE;}
+</style>
+
+</head>
+
+<body>
+
+<h1>Horizantal Table headers</h1>
+
+<table style="width:100%">
+
+<tr>
+    <th style="width:30%">Company</th>
+    <th>Name</th>
+    <th>Location</th>
+    <th>City</th>
+</tr>
+<tr style="height:50px">
+    <td>Tcs</td>
+    <td>Arun</td>
+    <td>India</td>
+    <td>Hyderabad</td>
+  </tr>
+<tr>
+    <td>Infosys</td>
+    <td>Akhil</td>
+    <td>India</td>
+    <td>Banglore</td>
+</tr>
+<tr>
+    <td>Cognizant</td>
+    <td>Ajay</td>
+    <td>India</td>
+    <td>Chennai</td>
+</tr>
+</table>
+<br>
+<h1>Vertical Table Headers</h1>
+
+<table style="width:100%">
+<caption> Employee Details </caption>
+
+<tr>
+	<th style="width:30%">Company</th>
+	<td>Tcs</td>
+	<td>Infosys</td>
+	<td>Cognizant</td>
+	<td>Wipro</td>
+	
+</tr>
+<tr style="height:50px">
+	<th>Name</th>
+	<td>Arun</td>
+	<td>Akhil</td>
+	<td>Ajay</td>
+	<td>Abhiram</td>
+</tr>
+<tr>
+	<th>Location</th>
+	<td>India</td>
+	<td>India</td>
+	<td>India</td>
+	<td>India</td>
+</tr>
+<tr>
+	<th>City</th>
+	<td>Bangalore</td>
+	<td>Hyderabad</td>	
+	<td>Chennai</td>
+	<td>Mumbai</td>
+</tr>
+</table>
+<br>
+<h1>Table with Colspan</h1>
+
+<table style="width:100%">
+<colgroup>
+<col span="3">
+<col span="2" style="background-color:red">
+</colgroup>
+
+<tr>
+    <th style="width:30%">Company</th>
+    <th>Contact</th>
+    <th colspan="2">Location</th>
+</tr>
+<tr style="height:50px">
+    <td>Tcs</td>
+    <td>Arun</td>
+    <td>India</td>
+    <td>Hyderabad</td>
+  </tr>
+<tr>
+    <td>Infosys</td>
+    <td>Akhil</td>
+    <td>India</td>
+    <td>Banglore</td>
+</tr>
+<tr>
+    <td>Cognizant</td>
+    <td>Ajay</td>
+    <td>India</td>
+    <td>Chennai</td>
+</tr>
+</table>
+<br>
+<h1>Table with Rowspan</h1>
+
+<table style="width:100%">
+<colgroup>
+<col span="2" style="background-color:blue">
+<col span="1" style="background-color:pink">
+</colgroup>
+<tr>
+	<th style="width:30%">Company</th>
+	<td>Tcs</td>
+	<td>Infosys</td>
+	<td>Cognizant</td>
+	<td>Wipro</td>
+	
+</tr>
+<tr style="height:50px">
+	<th>Name</th>
+	<td>Arun</td>
+	<td>Akhil</td>
+	<td>Ajay</td>
+	<td>Abhiram</td>
+</tr>
+<tr>
+	<th rowspan="2">Location</th>
+	<td>India</td>
+	<td>India</td>
+	<td>India</td>
+	<td>India</td>
+</tr>
+<tr>
+	<td>Bangalore</td>
+	<td>Hyderabad</td>	
+	<td>Chennai</td>
+	<td>Mumbai</td>
+</tr>
+</table>
+</body>
+
+</html>
+
